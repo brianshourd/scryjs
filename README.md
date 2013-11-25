@@ -174,10 +174,13 @@ license does not fit your requirements, please contact me as I would be
 more than happy to allow you to use this code under any conditions that
 you see fit.
 
-All code in this project is placed under the following license, save the
-copy of [require.js](http://requirejs.org) provided in
-`examples/browser-requirejs/lib`, which is copyright (c) The Dojo
+All code in this project is placed under the following license, save:
+    * the copy of [require.js](http://requirejs.org) provided in
+      `examples/browser-requirejs/lib/`, which is copyright (c) The Dojo
 Foundation and used under the MIT license.
+    * the copy of [qunit](http://qunitjs.com) provided in
+      `tests/resources/`, which is copyright (c) The jQuery Foundation
+and other contributors and used under the MIT license.
 
 The MIT License (MIT)
 Copyright (c) 2013 Brian Shourd
