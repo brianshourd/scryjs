@@ -1,4 +1,5 @@
 // Scry.js
+// Version 0.1.0
 // A module for looking into objects
 
 // License: The MIT License (MIT)

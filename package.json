@@ -1,0 +1,17 @@
+{
+    "name": "scry",
+    "version": "0.1.0",
+    "description": "A module for seeing things. Use scry to turn any object into a watchable/listenable/triggerable object with callbacks on its methods.",
+    "keywords": ["callback"],
+    "homepage": "http://github.com/brianshourd/scryjs",
+    "bugs": { "url" : "http://github.com/brianshourd/scryjs/issues"
+        , "email" : "brian.shourd@gmail.com"
+    },
+    "license": "MIT",
+    "author": "Brian Shourd <brian.shourd@gmail.com> (http://brianshourd.com)",
+    "files": ["scry.js"],
+    "main": "scry",
+    "repository" : { "type" : "git"
+        , "url" : "http://github.com/brianshourd/scryjs.git"
+    }
+}
