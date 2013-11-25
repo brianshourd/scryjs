@@ -167,4 +167,35 @@ but don't alert any of the watchers. Equivalent to
         
             object.scry.quietly(fname, object.scry.methods(), arg1, arg2, ...);
 
+## License
 
+My goal is to use as unrestrictive a license as possible. If this
+license does not fit your requirements, please contact me as I would be
+more than happy to allow you to use this code under any conditions that
+you see fit.
+
+All code in this project is placed under the following license, save the
+copy of [require.js](http://requirejs.org) provided in
+`examples/browser-requirejs/lib`, which is copyright (c) The Dojo
+Foundation and used under the MIT license.
+
+The MIT License (MIT)
+Copyright (c) 2013 Brian Shourd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
