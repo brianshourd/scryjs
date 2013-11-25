@@ -1,5 +1,9 @@
 // Scry.js
 // A module for looking into objects
+
+// License: The MIT License (MIT)
+// Copyright (c) 2013 Brian Shourd
+// For details, see http://github.com/brianshourd/scryjs
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) { // AMD
         define(factory);
