@@ -135,11 +135,11 @@ obtained when `watch` or `watchAll` is first called.
 
         Stop many watchers at once. Can be called with 
 
-            * no arguments: stop all watchers on all methods
-            * one argument (a string `fname`): stop all watchers on the method
-              `fname`
-            * one argument (an array of `fnames`): stop all watchers on
-              every method in `fnames`
+        * no arguments: stop all watchers on all methods
+        * one argument (a string `fname`): stop all watchers on the method
+          `fname`
+        * one argument (an array of `fnames`): stop all watchers on
+          every method in `fnames`
 
     * `object.scry.methods();`
 
@@ -177,12 +177,12 @@ you see fit.
 
 All code in this project is placed under the following license, save:
 
-    * the copy of [require.js](http://requirejs.org) provided in
-      `examples/browser-requirejs/lib/`, which is copyright (c) The Dojo
+* the copy of [require.js](http://requirejs.org) provided in
+  `examples/browser-requirejs/lib`, which is copyright (c) The Dojo
 Foundation and used under the MIT license.
-    * the copy of [qunit](http://qunitjs.com) provided in
-      `tests/resources/`, which is copyright (c) The jQuery Foundation
-and other contributors and used under the MIT license.
+* the copy of [qunit](http://qunitjs.com) provided in `tests/resources`,
+  which is copyright (c) The jQuery Foundation and other contributors
+and used under the MIT license.
 
 The MIT License (MIT)
 Copyright (c) 2013 Brian Shourd
