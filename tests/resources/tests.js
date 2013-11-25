@@ -384,7 +384,7 @@ var runTests = function(moduleName, getFreshObject, scryName, watchable) {
             });
         });
 
-        test('UnwatchAll', function() {
+        test('UnwatchAll all methods', function() {
             var called = 0;
             var callback = function() { called += 1; };
             scryObject.watchAll(callback);
@@ -392,6 +392,34 @@ var runTests = function(moduleName, getFreshObject, scryName, watchable) {
             scryObject.unwatchAll();
             callAllMethods();
             equal(called, 0, 'no arguments were called');
+        });
+
+        test('UnwatchAll some methods', function() {
+            var called = 0;
+            var callback = function() { called += 1; };
+            scryObject.watchAll(callback);
+            watchAllMethods(callback);
+            if (watchable.length >= 2) {
+                scryObject.unwatchAll([watchable[0], watchable[1]]);
+                callAllMethods();
+                equal(called, (watchable.length - 2) * 2, 'some arguments were not called');
+            } else {
+                expect(0);
+            }
+        });
+
+        test('UnwatchAll one method', function() {
+            var called = 0;
+            var callback = function() { called += 1; };
+            scryObject.watchAll(callback);
+            watchAllMethods(callback);
+            if (watchable.length >= 1) {
+                scryObject.unwatchAll(watchable[0]);
+                callAllMethods();
+                equal(called, (watchable.length - 1) * 2, 'all but one method was called');
+            } else {
+                expect(0);
+            }
         });
     };
 

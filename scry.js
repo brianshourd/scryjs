@@ -153,7 +153,13 @@
                 fnames.forEach(function(fname) {
                     watchers[fname] = {};
                 });
-            } else if (watchers.hasOwnProperty(fname)) {
+            } else if (toString.call(fname) == '[object Array]') { // fname is array
+                fname.forEach(function(name) {
+                    if (watchers.hasOwnProperty(name)) {
+                        watchers[name] = {};
+                    }
+                });
+            } else if (watchers.hasOwnProperty(fname)) { // fname is not array
                 watchers[fname] = {};
             }
         };
