@@ -119,7 +119,7 @@ called, `callback` is called afterward. The arguments given to callback
 are the same as the arguments given to `object[methodName]`. Returns an
 id, to be used with `unwatch`.
 
-    * `object.scry.watchAll(callback);
+    * `object.scry.watchAll(callback);`
 
         Watch all the watchable methods, calling `callback` whenever one
 is called. The arguments given to `callback` are the name of the method
@@ -140,11 +140,11 @@ obtained when `watch` or `watchAll` is first called.
             * one argument (an array of `fnames`): stop all watchers on
               every method in `fnames`
 
-    * object.scry.methods();
+    * `object.scry.methods();`
 
         Return a list with the names of all watchable methods.
 
-    * object.scry.quietly(fname, without [, arg1, arg2, ...]);
+    * `object.scry.quietly(fname, without [, arg1, arg2, ...]);`
 
         Call the function given by `fname` with the arguments given, but
 without alerting any of the watchers whose ids are presented in the
@@ -160,12 +160,11 @@ e.g.
         Note that `without` can be either an array of ids or a single
 id.
 
-    * object.scry.silently(fname [, arg1, arg2, ...]);
+    * `object.scry.silently(fname [, arg1, arg2, ...]);`
 
         Call the function given by `fname` with the supplied arguments,
 but don't alert any of the watchers. Equivalent to 
         
-            object.scry.quietly(fname, object.scry.methods(), arg1,
-arg2, ...);
+            object.scry.quietly(fname, object.scry.methods(), arg1, arg2, ...);
 
 
